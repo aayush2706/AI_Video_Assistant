@@ -6,13 +6,14 @@ from core.transcriber import transcribe_all
 from core.summarizer import summarize, generate_title
 from core.extractor import extract_action_items, extract_key_decisions, extract_questions
 
-
+print("🛠️  AI Video Assistant - Test Script")
 source = "https://www.youtube.com/watch?v=_Q-e_nczWqM&t=223s"
 language = "english"   # "english" → Whisper, "hinglish" → Sarvam
 
 
-
+print(f"Processing source: {source}")
 chunks = process_input(source)
+print(f"Audio processed into {len(chunks)} chunk(s). Starting transcription...")
 
 
 transcript = transcribe_all(chunks, language=language)

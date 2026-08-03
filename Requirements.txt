@@ -2,7 +2,7 @@
 # Python >= 3.10 recommended
 
 # ── Audio / Video acquisition ─────────────────────────────────────────────────
-yt-dlp>=2024.4.9                  # Download audio from YouTube URLs
+yt-dlp                 # Download audio from YouTube URLs
 pydub>=0.25.1                     # Audio file manipulation / format conversion
 ffmpeg-python>=0.2.0              # FFmpeg bindings (FFmpeg binary must be installed separately)
 
@@ -19,7 +19,8 @@ langchain>=0.2.0
 langchain-core>=0.2.0
 langchain-community>=0.2.0
 langchain-mistralai>=0.1.0        # LangChain wrapper for Mistral API
-mistralai>=0.4.0                  # Official Mistral Python client
+mistralai>=0.4.0  
+langchain-chroma                # Official Mistral Python client
 
 # ── RAG Pipeline ──────────────────────────────────────────────────────────────
 chromadb>=0.5.0                   # Local vector store

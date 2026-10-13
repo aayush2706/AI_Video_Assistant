@@ -1,4 +1,4 @@
-```python
+
 import os
 import yt_dlp
 from pydub import AudioSegment
@@ -134,4 +134,3 @@ def process_input(source: str) -> list[str]:
 
     print(f"Audio ready — {len(chunks)} chunk(s) created.")
     return chunks
-```
